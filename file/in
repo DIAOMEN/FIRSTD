@@ -1,0 +1,16 @@
+{
+	url : qxdcx.mappath("~/rest/vyjgzqxqxdcx/deptTree"),
+	displayCheckBox: true,
+	checkCascade : false,
+	onselectionchanged : function(e){
+		function selectChildren(node){
+			if(node&&node.childNodes){
+				$.each(node.childNodes,function(i,child){
+					child.select();
+					selectChildren(child);
+				});
+			}
+		}
+		e.selection&&selectChildren(e.selection);
+	}
+}
