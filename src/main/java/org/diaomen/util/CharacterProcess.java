@@ -31,7 +31,7 @@ public class CharacterProcess {
 		Reader reader = new FileReader(file);
 		if (reader.ready()) {
 			int i = -1;
-			char[] cbuf = new char[1024];// 1024char*2=2048bytes
+			char[] cbuf = new char[1024];// 1024*2=2048bytes
 			while ((i = reader.read(cbuf)) != -1) {
 				content += new String(cbuf).substring(0, i);
 			}
