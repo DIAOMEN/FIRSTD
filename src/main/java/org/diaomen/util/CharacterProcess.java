@@ -1,6 +1,3 @@
-/**
- * 
- */
 package org.diaomen.util;
 
 import java.io.File;
