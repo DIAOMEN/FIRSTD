@@ -16,7 +16,7 @@ import java.io.Writer;
  */
 public class CharacterProcess {
 	/**
-	 * 获取文件里面的内容 
+	 * 从文件读取字符串
 	 * @create 2016年6月24日 下午10:15:24
 	 * @by xiehuihui
 	 * @param file
@@ -40,6 +40,14 @@ public class CharacterProcess {
 		return content;
 	}
 	
+	/**
+	 * 向文件中写入字符串
+	 * @create 2016年6月24日 下午10:29:06
+	 * @by xiehuihui
+	 * @param file
+	 * @param content
+	 * @throws IOException
+	 */
 	public static void setContent(File file,String content) throws IOException{
 		if (file == null || !file.exists()) {
 			file = new File(System.getProperty("user.dir") + "/file/out");
