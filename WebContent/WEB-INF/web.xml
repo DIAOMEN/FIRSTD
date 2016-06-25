@@ -2,11 +2,11 @@
 <web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee"
 	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 	<servlet>
-		<servlet-name>diaomen</servlet-name>
+		<servlet-name>demo</servlet-name>
 		<servlet-class>org.diaomen.App</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>diaomen</servlet-name>
-		<url-pattern>/diaomen</url-pattern>
+		<servlet-name>demo</servlet-name>
+		<url-pattern>/demo</url-pattern>
 	</servlet-mapping>
 </web-app>
