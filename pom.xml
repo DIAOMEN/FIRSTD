@@ -5,7 +5,7 @@
   <groupId>org</groupId>
   <artifactId>diaomen</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>diaomen</name>
   <url>http://maven.apache.org</url>
@@ -17,4 +17,11 @@
   <organization>
   	<name>DIAOMEN</name>
   </organization>
+  <dependencies>
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>servlet-api</artifactId>
+  		<version>3.0-alpha-1</version>
+  	</dependency>
+  </dependencies>
 </project>
