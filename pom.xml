@@ -17,7 +17,7 @@
 	<organization>
 		<name>DIAOMEN</name>
 	</organization>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -25,4 +25,18 @@
 			<version>3.0-alpha-1</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.1-SNAPSHOT</version>
+				<configuration>
+					<url>http://localhost:8080/manager/html</url>
+					<server>tomcat</server>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
